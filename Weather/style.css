@@ -1,0 +1,129 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    @font-face {
+        font-family: alireza;
+        src: url("./fonts/Amillova.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-family: amir;
+        src: url("./fonts/Peach\ Daisy.ttf") format("truetype");
+    }
+    
+    body {
+        background-image: linear-gradient(90deg, rgb(9, 157, 226) 0%, white 100%);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .name {
+        z-index: 1;
+        margin-top: 25px;
+        font-family: alireza;
+        font-size: 55px;
+        color: #fff;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-radius: 10px;
+        animation: name 4s alternate infinite;
+        letter-spacing: 12px;
+        text-shadow: 0 0 20px;
+    }
+    
+    @keyframes name {
+        0% {
+            color: rgb(9, 157, 226);
+        }
+        25% {
+            color: rgb(228, 243, 24);
+        }
+        50% {
+            color: lightgray;
+        }
+        75% {
+            color: rgb(255, 17, 17)
+        }
+    }
+    
+    .txt {
+        all: unset;
+        font-size: 65px;
+        margin-top: 55px;
+        /* font-family: amir; */
+        font-weight: bolder;
+        /* border-left: 2px solid;
+        border-right: 2px solid; */
+        border-bottom: 2px solid;
+        /* border-radius: 10px; */
+        color: #000;
+    }
+    
+    .btn {
+        all: unset;
+        font-size: 40px;
+        background-color: rgb(10, 230, 29);
+        padding: 10px;
+        border-radius: 15px;
+        margin-left: 25px;
+        cursor: pointer;
+        transition: 0.6s;
+        box-shadow: 0 0 15px rgb(0, 173, 14);
+        font-weight: bolder;
+        /* font-family: amir; */
+    }
+    
+    .btn:hover {
+        background-color: rgb(0, 173, 14);
+        box-shadow: 0 0 15px rgb(0, 173, 14);
+        color: #fff;
+    }
+    
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .city {
+        list-style: none;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgb(9, 157, 226);
+        border-radius: 15px;
+        font-size: 25px;
+        margin-left: 45px;
+        height: 380px;
+        margin-top: 45px;
+        font-family: fantasy;
+    }
+    
+    .city-name {
+        margin-top: 15px;
+    }
+    
+    .city-name span {
+        margin: 30px;
+    }
+    
+    .country {
+        background-color: rgb(0, 173, 14);
+        color: #fff;
+        padding: 7px;
+        border-radius: 5px;
+    }
+    
+    .city-temp {
+        margin-top: 35px;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    
+    .city-icon {
+        /* transform: translateX(85px); */
+    }
